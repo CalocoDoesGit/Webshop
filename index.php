@@ -8,6 +8,6 @@
         <link rel="shortcut icon" href="images/m.ico" type="image/x-icon" />-->
     </head>
 
-    <?php include("header.php"); ?>
+    <?php include("header.html"); ?>
 
 </html>
