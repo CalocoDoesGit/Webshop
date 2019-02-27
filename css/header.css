@@ -1,0 +1,51 @@
+header{
+    background-color: #798791;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 110px;
+}
+
+header > a{
+    color: black;
+    font-family: "Segoe UI Semibold";
+    text-align: center;
+    text-decoration: none;
+    margin-top: 12.5px;
+    margin-left: 40px;
+    font-size: 30;
+    width: 261px;
+    height: 85px;
+    line-height: 82.5px;
+    border-radius: 42.5px;
+}
+
+header > .NotActive-Button{
+    background-color: #99AAB5;
+}
+
+header > .NotActive-button:hover{
+    background-color: #7289DA;
+}
+
+header > .Active-Button{
+    background-color: #7289DA;
+}
+
+header > #ButtonHome{
+    float: left;
+    margin-left: 10vw;
+}
+
+header > #ButtonProducts{
+    float: left;
+}
+
+header > #ButtonWishList{
+    float: left;
+}
+
+header > #ButtonLogin{
+    float: left;
+}
