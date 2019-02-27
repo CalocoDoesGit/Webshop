@@ -1,0 +1,125 @@
+input{
+    font-family: "Segoe UI Semibold";
+    color: rgba(35, 39, 42, 0.5);
+    font-size: 30px;
+    border-color: #707070;
+    border-width: 1px;
+    border-radius: 60px;
+}
+
+input:focus{
+    outline: 0;
+}
+
+#Login-GrayFade{
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.5);
+    position: absolute;
+    left: 0;
+    /*top: 0;*/
+    top: -100%;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#Login-Body{
+    overflow: hidden;
+    background-color: #E9E9E9;
+    position: absolute;
+    /*top: 50%;*/
+    top: -50%;
+    left: 50%;
+    margin-top: -215px;
+    margin-left: -517px;
+    width: 1034px;
+    height: 430px;
+    border-radius: 60px;
+    transition: top 0.5s ease-in-out;
+}
+
+#Login-Body > form > #Username{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-top: -45px;
+    margin-left: -485px;
+    width: 970px;
+    height: 90px;
+    padding-left: 30px;
+}
+
+#Login-Body > form > #Password{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-top: -45px;
+    margin-left: -485px;
+    width: 970px;
+    height: 90px;
+    padding-left: 30px;
+}
+
+#Login-Body > form > input::placeholder{
+    opacity: 0.5;
+}
+
+#Login-Body > form > input:focus::placeholder{
+    opacity: 0;
+}
+
+#Login-Body > form > input:hover::placeholder{
+    color: #7289DA;
+}
+
+#Login-Body > form > #Login{
+    background-color: #99AAB5;
+    color: black;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-top: -45px;
+    margin-left: 10px;
+    width: 261px;
+    height: 85px;
+    border-width: 0px;
+    border-radius: 42.5px;
+}
+
+#Login-Body > form > #PasswordReset{
+    background-color: #99AAB5;
+    color: black;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-top: -45px;
+    margin-left: -271px;
+    width: 261px;
+    height: 85px;
+    border-width: 0px;
+    border-radius: 42.5px;
+}
+
+#Login-Body > form > #PasswordReset:hover, #Login-Body > form > #Login:hover{
+    background-color: #7289DA;
+}
+
+#RegisterDiv{
+    font-family: "Segoe UI Semibold";
+    color: rgba(35, 39, 42, 0.5);
+    font-size: 20px;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    margin-top: 0px;
+    margin-left: -150px;
+}
+
+#Register{
+    color: rgba(35, 39, 42, 0.5);
+}
+
+#Register:hover{
+    color: #7289DA;
+}
