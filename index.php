@@ -9,6 +9,6 @@
     </head>
 
     <?php include("header.html"); ?>
-    <?php include("login.html"); ?>
+    <?php include("login.php"); ?>
 
 </html>
