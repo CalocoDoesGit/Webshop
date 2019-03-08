@@ -12,5 +12,3 @@
     <?php include("login.html"); ?>
 
 </html>
-
-:\xampp\htdocs\Webshop\wishlist.php on line 12
