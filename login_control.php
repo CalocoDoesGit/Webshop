@@ -46,6 +46,4 @@ if (isset($_POST['Username']) && isset($_POST['Password'])) {
 //3.1.4 if the user is logged in Greets the user with message
 if (isset($_SESSION['username'])) {
     header("Location: /Webshop");
-} else {
-    //3.2 When the user visits the page first time, simple login form will be displayed.
 }

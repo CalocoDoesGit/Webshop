@@ -1,7 +1,4 @@
 
-
-
-
 <?php
 	require('config.php');
     // If the values are posted, insert them into the database.
@@ -23,13 +20,6 @@
         }
     }
     ?>
-
-
-
-
-
-
-
 
 
 <!DOCTYPE html>
