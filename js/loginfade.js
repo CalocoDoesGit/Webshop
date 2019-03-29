@@ -1,3 +1,5 @@
+loginfade("in");
+
 function loginfade(Direction) {
         
     if (Direction == "in") {

@@ -29,7 +29,7 @@ input:focus{
     background-color: #E9E9E9;
     position: absolute;
     /*top: 50%;*/
-    top: -50%;
+    top: 50%;
     left: 50%;
     margin-top: -215px;
     margin-left: -517px;
@@ -44,10 +44,12 @@ input:focus{
     top: 20%;
     left: 50%;
     margin-top: -45px;
-    margin-left: -485px;
-    width: 970px;
+    margin-left: -50%;
+    transform: translate(4%,0);
+    width: 90%;
     height: 90px;
     padding-left: 30px;
+    color: #7289DA;
 }
 
 #Login-Body > form > #Password{
@@ -55,10 +57,12 @@ input:focus{
     top: 45%;
     left: 50%;
     margin-top: -45px;
-    margin-left: -485px;
-    width: 970px;
+    margin-left: -50%;
+    transform: translate(4%,0);
+    width: 90%;
     height: 90px;
     padding-left: 30px;
+    color: #23272A;
 }
 
 #Login-Body > form > input::placeholder{
@@ -71,6 +75,7 @@ input:focus{
 
 #Login-Body > form > input:hover::placeholder{
     color: #7289DA;
+    transition: color 0.25s;
 }
 
 #Login-Body > form > #Login{
@@ -103,6 +108,7 @@ input:focus{
 
 #Login-Body > form > #PasswordReset:hover, #Login-Body > form > #Login:hover{
     background-color: #7289DA;
+    transition: background-color 0.25s;
 }
 
 #RegisterDiv{
@@ -122,4 +128,5 @@ input:focus{
 
 #Register:hover{
     color: #7289DA;
+    transition: color 0.25s;
 }

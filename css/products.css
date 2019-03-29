@@ -1,0 +1,138 @@
+body{
+    overflow-x: hidden;
+    background-color: #23272A;
+    margin-top: 160px;
+}
+
+.product-body{
+    background-color: #E9E9E9;
+    margin-top: 30px;
+    margin-left: 10%;
+    width: 80%;
+    height: 430px;
+    border-radius: 60px;
+}
+
+.product-image{
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50px;
+}
+
+.product-text{
+    margin-top: -350px;
+    margin-left: 420px;
+    width: 480px;
+    height: 290px;
+}
+
+.product-text > p{
+    word-break: normal;
+}
+
+.product-right-side{
+    margin-top: -320px;
+    margin-left: 925px;
+    width: 250px;
+    height: 350px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.product-icons{
+    margin-top: 60px;
+    font-family: "Segoe UI Semibold";
+    color: #2C2F33;
+}
+
+.product-icons > ul{
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+.product-icons > ul > li{
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.product-icons ul > li > a{
+    color: #2C2F33;
+    font-size: 30px;
+    text-align: center;
+}
+
+.product-icons ul > li > a:hover{
+    color: #7289DA;
+    transition: color 0.25s;
+}
+
+.product-add-to-cart{
+    font-family: "Segoe UI Semibold";
+    color: #2C2F33;
+    font-size: 17.5px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 57.5px;
+}
+
+.product-add-to-cart-back{
+    background-color: #E9E9E9;
+    border-radius: 50px;
+    margin-top: 40px;
+    width: 220px;
+    height: 60px;
+    left: 50%;
+    transform: translate(7.5%,0);
+}
+
+.product-add-to-cart-back:hover{
+    background-color: #7289DA;
+    transition: background-color 0.25s;
+}
+
+h1{
+    font-family: "Segoe UI Semibold";
+    color: #7289DA;
+    font-size: 40px;
+}
+
+h1 > a{
+    font-family: "Segoe UI Semibold";
+    color: #7289DA;
+    font-size: 40px;
+}
+
+h2{
+    font-family: "Segoe UI Semibold";
+    color: #7289DA;
+    font-size: 40px;
+}
+
+h3{
+    font-family: "Segoe UI Semibold";
+    color: #7289DA;
+    font-size: 15px;
+}
+
+p{
+    font-family: "Segoe UI Semibold";
+    color: #2C2F33;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.product-right-side > .product-price-amount > h2{
+    margin-top: 20px;
+}
+
+.product-right-side > .product-price-amount > h3{
+    margin-top: -30px;
+}

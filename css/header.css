@@ -27,6 +27,7 @@ header > .NotActive-Button{
 
 header > .NotActive-button:hover{
     background-color: #7289DA;
+    transition: background-color 0.25s;
 }
 
 header > .Active-Button{
