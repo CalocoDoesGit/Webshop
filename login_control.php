@@ -32,7 +32,7 @@ if (isset($_POST['Username']) && isset($_POST['Password'])) {
         if ($count == 1) {
             // echo("HET WERKT");
 
-            session_name($username);
+            // session_name($username);
             session_start();
             $_SESSION['username'] = $username;
             // header("Location: /Webshop");

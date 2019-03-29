@@ -1,4 +1,7 @@
 <html>
+
+    <?php session_start(); ?>
+
     <link rel="stylesheet" href="css/header.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
@@ -6,7 +9,7 @@
         <a href="./" id="ButtonHome" class="NotActive-Button">Home</a>
         <a href="products.php" id="ButtonProducts" class="NotActive-Button">Products</a>
         <a href="wishlist.php" id="ButtonWishList" class="NotActive-Button">Wish List</a>
-        <a href="login.php" id="ButtonLogin" class="NotActive-Button"><?php if (isset($_SESSION)) { echo $_SESSION['username']; }else{ echo "Login"; } ?></a>
+        <a href="login.php" id="ButtonLogin" class="NotActive-Button"><?php if (isset($_SESSION['username'])) { echo "<script> alert('yes'); </script>".$_SESSION['username']; }else{ echo "<script> alert('no'); </script>Login"; } ?></a>
     </header>
 
     <script>
