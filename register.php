@@ -46,10 +46,9 @@
 
 <div class="container">
       <form class="form-signin" method="POST">
-        <h2 class="form-signin-heading">Please Register</h2>
+        <h2 class="form-signin-heading" style="color: white;">Please Register</h2>
         <div class="input-group">
-	  <span class="input-group-addon" id="basic-addon1">@</span>
-	  <input type="text" name="username" class="form-control" placeholder="Name" required>
+	  <input type="text" name="username" class="form-control" style="width: 138.5%; border: 1px solid #ccc; border-radius: 4px;" placeholder="Name" required>
 	</div>
         <label for="inputEmail" class="sr-only">Email address</label>
         <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>

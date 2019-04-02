@@ -1,10 +1,17 @@
+body{
+    overflow-x: hidden;
+    background-color: #23272A;
+    margin: 0;
+}
+
 header{
     background-color: #798791;
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 110px;
+    height: 80px;
+    z-index: 100;
 }
 
 header > a{
@@ -12,12 +19,11 @@ header > a{
     font-family: "Segoe UI Semibold";
     text-align: center;
     text-decoration: none;
-    margin-top: 12.5px;
-    margin-left: 40px;
+    margin-top: 10px;
     font-size: 30;
-    width: 261px;
-    height: 85px;
-    line-height: 82.5px;
+    width: 14vw;
+    height: 60px;
+    line-height: 60px;
     border-radius: 42.5px;
 }
 
@@ -34,19 +40,44 @@ header > .Active-Button{
     background-color: #7289DA;
 }
 
-header > #ButtonHome{
+header > #ButtonLeft{
     float: left;
-    margin-left: 13vw;
+    margin-left: 2.5%;
 }
 
-header > #ButtonProducts{
-    float: left;
+header > #ButtonRight{
+    float: right;
+    margin-right: 2.5%;
 }
 
-header > #ButtonWishList{
+#header-logo{
     float: left;
+    margin-left: 2.5%;
+    margin-top: 10px;
+    width: 150px;
+    height: 60px;
 }
 
-header > #ButtonLogin{
-    float: left;
+#addproduct{
+    position: absolute;
+    float: right;
+    margin-top: 90px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 45;
+    line-height: 60px;
+}
+
+#addproduct:not(:hover):before{
+    content: "add_circle_outline";
+    color: #99AAB5;
+    transition: color 0.25s;
+}
+
+#addproduct:hover:before{
+    content: "add_circle";
+    color: #7289DA;
+    transition: color 0.25s;
 }
