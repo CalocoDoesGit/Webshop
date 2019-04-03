@@ -58,6 +58,50 @@ header > #ButtonRight{
     height: 60px;
 }
 
+#header-logo img{
+    width: 150px;
+    height: 60px;
+}
+
+#header-logo:hover img{
+    width: 160px;
+    height: 64px;
+    margin-left: -5px;
+    margin-top: -2px;
+    transition: width 0.25s, height 0.25s, margin-left 0.25s, margin-top 0.25s;
+}
+
+#editproduct{
+    position: absolute;
+    float: right;
+    margin-top: 90px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 45;
+    line-height: 60px;
+    transform: rotate(0deg);
+    transition: transform 0.25s;
+}
+
+#editproduct:not(:hover):before{
+    content: "settings";
+    color: #99AAB5;
+    transition: color 0.25s;
+}
+
+#editproduct:hover:before{
+    content: "settings";
+    color: #7289DA;
+    transition: color 0.25s;
+}
+
+#editproduct:hover{
+    transform: rotate(-90deg);
+    transition: transform 0.25s;
+}
+
 #addproduct{
     position: absolute;
     float: right;
@@ -68,6 +112,8 @@ header > #ButtonRight{
     text-align: center;
     font-size: 45;
     line-height: 60px;
+    transform: rotate(0deg);
+    transition: transform 0.25s;
 }
 
 #addproduct:not(:hover):before{
@@ -80,4 +126,9 @@ header > #ButtonRight{
     content: "add_circle";
     color: #7289DA;
     transition: color 0.25s;
+}
+
+#addproduct:hover{
+    transform: rotate(-90deg);
+    transition: transform 0.25s;
 }

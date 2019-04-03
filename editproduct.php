@@ -18,7 +18,6 @@
         $result=mysqli_query($link,$sql);
 
         while($rows=mysqli_fetch_array($result)){
-            if($rows["stock"] > -1){
     ?>
         <div class="product-body">
             <a href=""><img src=<?php echo $rows["image"]; ?> alt="There was ment to be an image here" class="product-image" ></a>
@@ -56,18 +55,13 @@
                 </div>
                 <div href="./" class="product-add-to-cart-back"><a href="./" class="product-add-to-cart">Add to cart</a></div>
             </div>
-            <?php if(isset($_SESSION['username'])){ ?>
-                <div class="product-fav">
-                    <form name="Fav-product" method="POST" action="/Webshop/wishlistproduct.php">
-                        <input type="hidden" name="Id" value=<?php echo $rows["id"]; ?>>
-                        <input type="submit" class="material-icons" name="fav" value="playlist_add">
-                    </form>
-                </div>
-            <?php } ?>
+            <form name="Delete-product" method="POST" action="/Webshop/deleteproduct.php">
+                <input type="hidden" name="Id" value=<?php echo $rows["id"]; ?>>
+                <input type="submit" class="Delete-product material-icons" name="Delete" value="clear">
+            </form>
         </div>
         <br>
     <?php
-            }
         }
     ?>
 
