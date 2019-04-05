@@ -10,9 +10,28 @@
         $housenumber = $_POST['housenumber'];
 
         $hashed = password_hash($password, PASSWORD_DEFAULT);
+    
  
         $query = "INSERT INTO `customer` (name, password, email, zipcode, number) VALUES ('$username', '$hashed', '$email', '$zipcode', '$housenumber')";
         $result = mysqli_query($link, $query);
+
+        $query = "SELECT id FROM `customer` WHERE (name, password, email, zipcode, number) = ('$username', '$hashed', '$email', '$zipcode', '$housenumber') ";
+        $result = mysqli_query($link, $query);
+    
+
+        for ($i = -1; $i <= 8; $i++) {
+            $bytes = openssl_random_pseudo_bytes($i, $cstrong);
+            $hex   = bin2hex($bytes);
+        }
+        $id = mysqli_fetch_array($result);
+        $id_cust = $id['id'];
+        $query = "INSERT INTO `wishlist` (customer_id, indentifyer) VALUES ('$id_cust', '$hex')";
+    
+
+        
+        $result = mysqli_query($link, $query);
+
+
         if($result){
             $smsg = "User Created Successfully.";
         }else{
